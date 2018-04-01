@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>BILLING</title>
+</head>
+<body>
+<h1><center>BILLING</center></h1>
+<table border="2" align="center"height="200px" width="600px" bgcolor="lightblue">
+<tr>
+<td>
+   <form>
+       Name&nbsp&nbsp<input type="cell" name="text" placeholder="Name"size="18" maxlength="40" required> </br></br>
+Phone no.&nbsp<input type="cell" name="text" placeholder="phone no."size="18" maxlength="10"> </br></br>
+E-mail ID&nbsp<input type="text" name="text" placeholder="Email-Id" size="18" maxlength="30"> </br></br>
+
+
+ Room type
+<select>
+<option>standard-room(single)</option>
+<option>Triple/family room</option>
+<option>Suite(deluxe room)</option>
+</select>
+</br></br>
+ ROOM PRICE&nbsp&nbsp<input type="text"  id="m"  oninput="myfunction()"><br><br>
+ NUMBER OF PERSON&nbsp&nbsp<input type="text" id="n" oninput="myfunction()"><br><br>
+ DAYS STAYED&nbsp&nbsp<input type="text" id="o"  oninput="myfunction()"><br><br>
+
+Rs.<input type="text" id="d"> 
+</td>
+</tr>
+   </form>
+</table>
+<script>
+
+function myfunction()
+{
+var a=document.getElementById("m").value;
+a=Number(a);
+var b=document.getElementById("n").value;
+b=parseInt(b);
+var c=document.getElementById("o").value;
+c=Number(c);
+var rs=a*b*c;
+document.getElementById("d").value=rs ;
+
+}
+
+</script>
+
+</body>
+</html>
+
+

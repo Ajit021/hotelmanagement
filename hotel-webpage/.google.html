@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>the division</title>
+<style>
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+.text
+{ 
+margin-left:200px;
+
+}
+
+.header
+{
+padding :10px;
+color :orange;
+background-color:blue;
+text-align:center;
+
+}
+.marquee
+{
+
+background-color:green;
+}
+.reservation
+{float:left;
+  
+}
+.nav
+{
+background-color:silver;
+padding:10px;
+
+}
+.contactimg
+{  
+float :left;
+margin-top:10px;
+height:600px;
+}
+a[id=f]
+{
+text-decoration:none;
+padding-left:40px;
+color:white;
+}
+.img
+{
+
+margin-left:235px;
+ border-left:1 px solid black;
+padding:10px;
+}
+
+.mySlides {
+display:none;
+}
+
+ 
+#footer
+   {
+ 
+padding :10px;
+color:white;
+
+background-color:green;
+text-align:center;
+
+}
+.facebook
+{
+float:right;
+}
+
+</style>
+</head>
+<body>
+<body background="ajit.jpg">
+
+
+<div class=facebook>
+<a href="https://www.facebook.com" target=blank>
+<img src="Follow-us-on-Facebook.png" width="148" height="43" ></a>
+</div>
+
+
+ <div class="header">
+<h1><marquee>WELCOME TO HOTEL WELCOME PARK</marquee></h1>
+</div>
+<div class="marquee">
+
+   <marquee scrollamount="1" >
+                    <strong>"Good view and large room" You can't find such big rooms and lake view in Naintal. My experience was good and I didn't face any problems. Ample parking space. Credit card facility available. laundry service is also available.
+                  </strong></marquee>
+</div>
+<div class="nav">
+
+  <a href=".hotelhomepage.html" id="f">HOME</a>
+<a href=".google.html"  id="f">PACKAGE</a>
+<a href=".facilitiees.html"   id="f">FACILITIES</a>
+<a href=".touristspot.html"  id="f">TOURIST SPOTS</a>
+<a href=".howtoreach.html"  id="f">HOW TO REACH</a>
+<a href=".gallery.html"  id="f">PHOTO GALLERY</a>
+<a href=".guestresponse.html"  id="f">GUEST RESPONSE </a>
+<a href=".ll.html"  id="f">BILLING</a>
+<a href=".mini projectHTML.html"  id="f">REGISTRATION</a>
+
+
+</div>
+<div class="contactimg">
+ 
+
+ <img src="contact1.jpg"><br>
+ <a href="https://www.google.co.in/maps/place/Hotel+Welcome+Park/@29.3771266,79.4666668,14.6z/data=!4m5!3m4!1s0x39a0a1f0aab3d569:0x77e343c33a3c78af!8m2!3d29.3827479!4d79.4645819"target="blank" ><img src="map.jpg"></a>
+   <br>
+<table border="1" bgcolor="silver" >
+<th><strong>RESERVATION</strong>
+<tr>
+
+<td>
+Name&nbsp&nbsp<input type="cell" name="text" placeholder="Name"size="18" maxlength="40"> </br></br>
+Phone no.&nbsp<input type="cell" name="text" placeholder="phone no."size="18" maxlength="10"> </br></br>
+E-mail ID&nbsp<input type="text" name="text" placeholder="Email-Id" size="18" maxlength="30"> </br></br>
+<p > <big><b> ARRIVAL STATUS</b></big></p>
+<input type="checkbox" name="hotelstatus" >Check in<br>
+<input type="checkbox" name="hotelstatus" >Check out<br>
+No of adults  <input type="text"  "size="18" maxlength="4"> </br></br>
+ Room type
+<select>
+<option>select your choice</option>
+<option>standard-room(single)</option>
+<option>Triple/family room</option>
+<option>Suite(deluxe room)</option>
+</select>
+</br></br>
+<input type ="submit"  value="submit" >
+<tr>
+</td>
+</form>
+</table>
+</div>
+  
+<div class="img">
+    
+
+
+
+
+
+<div class="w3-content w3-section" style="max-width:22px">
+  <img class="mySlides" src="deluxe1500x930.jpg" width="1100" height= "321">
+  <img class="mySlides" src="LeisureSpa4.jpg" width="1100" height= "321">
+  <img class="mySlides" src="GovernorsRoom2.jpg" width="1100" height= "321">
+  <img class="mySlides" src="thermal-hotel-restaurant-and-lobby-02.jpg" width="1100" height= "321">
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+
+
+<div class="text">
+<table cellspacing="0" cellpadding="10"  color="black" bgcolor="white" width="1100px" height="250px">
+<form>
+<tr>
+<td width="470" >
+<h2 style="text-align:center">Pricing Tables Of Rooms</h2>
+<p style="text-align:center">PRICE LISTED BELOW IS FOR  ONE PERSON </p>
+<br>
+<br>
+
+                 <h2 style="text-align:center">Pricing Tables Of Rooms</h2>
+
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">LUXURY</li>
+    <li class="grey">4000 / DAY</li>
+    <li>10 GB FREE WIFI</li>
+    <li>ROOM SERVICE</li>
+    <li>FREE BREAK FAST</li>
+    <li> OUTDOOR GAMES</li>
+    <li class="grey"><a href=".mini projectHTML.html" class="button">BOOK</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">DELUX</li>
+    <li class="grey"> 3000/day</li>
+    <li>5 GB FREE WIFI </li>
+    <li>ROOM SERVICE </li>
+    <li>FREE BREAK FAST</li>
+    <li>OUTDOOR GAMES</li>
+    <li class="grey"><a href=".mini projectHTML.html" class="button">BOOK</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">HONEYMOON PACKAGE</li>
+    <li class="grey"> 4500 / Day</li>
+    <li>FREE WIFI</li>
+    <li>ROOM SERVICE</li>
+    <li>FREE FOOD</li>
+    <li>OUT DOOR GAMES</li>
+    <li class="grey"><a href=".mini projectHTML.html" class="button">BOOK</a></li>
+  </ul>
+</td>
+</tr>
+</form>
+</table>
+</div>
+
+
+<div id="footer"> 
+  
+       copyright &copy; HOTEL SUNBEAM
+</div>
+
+
+</body>
+</html>
